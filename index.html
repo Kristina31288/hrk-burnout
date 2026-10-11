@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Заряд на нуле? Тест на выгорание · HRD без нытья</title>
+<meta name="description" content="Бесплатный тест на рабочее выгорание: 20 вопросов, 4 минуты, версии для сотрудников и для HR/руководителей. Результат остаётся у вас, ничего не отправляется.">
+<meta property="og:title" content="Заряд на нуле? Тест на выгорание">
+<meta property="og:description" content="20 вопросов, 4 минуты. Для сотрудников и для HR/руководителей. Бесплатно от канала HRD без нытья.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://kristina31288.github.io/hrk-burnout/og.png">
+<meta property="og:url" content="https://kristina31288.github.io/hrk-burnout/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%23F6F0E4'/%3E%3Ctext x='32' y='41' font-size='26' font-weight='700' text-anchor='middle' fill='%23C8553D' font-family='Georgia,serif'%3EHR%3C/text%3E%3C/svg%3E">
+<style>
+:root{--cream:#F6F0E4;--paper:#FFFBF3;--blush:#F2C9CF;--blush-d:#E39AA6;--lime:#C9DB6B;--olive:#8C9A3C;--green:#1F3D2B;--green-2:#3C5A45;--terra:#C8553D;--line:rgba(31,61,43,.14);--r:26px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--cream);color:var(--green);font:17px/1.5 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+.blob{position:fixed;z-index:0;border-radius:50%;filter:blur(2px);pointer-events:none}
+.b1{width:420px;height:420px;background:var(--blush);opacity:.55;top:-140px;right:-120px}
+.b2{width:300px;height:300px;background:var(--lime);opacity:.45;bottom:-110px;left:-90px;border-radius:58% 42% 61% 39%/45% 55% 45% 55%}
+.wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:22px 16px 60px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px;font-size:15px}
+.logo{width:36px;height:36px;border-radius:50%;background:var(--paper);border:1.5px solid var(--line);display:grid;place-items:center;font:700 14px Georgia,serif;color:var(--terra)}
+.chip{font-size:13px;background:var(--paper);border:1.5px solid var(--line);border-radius:999px;padding:6px 12px}
+h1{font:700 clamp(34px,8vw,56px)/1.04 Georgia,"Times New Roman",serif;letter-spacing:-.5px;margin-bottom:14px}
+h1 em{font-style:normal;background:linear-gradient(transparent 58%,var(--lime) 58% 92%,transparent 92%);padding:0 4px}
+.lead{font-size:19px;color:var(--green-2);max-width:560px;margin-bottom:26px}
+.card{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:0 12px 0 -6px rgba(31,61,43,.06),0 20px 40px -24px rgba(31,61,43,.25)}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--cream);border:1.5px solid var(--line);border-radius:18px;padding:5px;margin:6px 0 18px}
+.seg button{border:0;background:transparent;font-size:16px;font-weight:600;font-family:inherit;color:var(--green);padding:14px 10px;border-radius:14px;cursor:pointer;transition:.2s;text-align:center;line-height:1.25}
+.seg button small{display:block;font-weight:400;font-size:13px;color:var(--green-2);margin-top:2px}
+.seg button[aria-pressed=true]{background:var(--green);color:var(--cream);box-shadow:0 6px 0 -2px #0f261a}
+.seg button[aria-pressed=true] small{color:#cfe0b0}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 20px}
+.facts span{font-size:14px;background:var(--cream);border-radius:999px;padding:6px 12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;font-size:17px;font-weight:700;font-family:inherit;border-radius:18px;padding:16px 26px;cursor:pointer;background:var(--lime);color:var(--green);box-shadow:0 7px 0 var(--olive);transition:transform .12s,box-shadow .12s;text-decoration:none}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(5px);box-shadow:0 2px 0 var(--olive)}
+.btn.ghost{background:var(--paper);border:1.5px solid var(--line);box-shadow:0 6px 0 rgba(31,61,43,.12)}
+.btn.ghost:active{box-shadow:0 1px 0 rgba(31,61,43,.12)}
+.btn.pink{background:var(--blush);box-shadow:0 7px 0 var(--blush-d)}
+.note{font-size:13.5px;color:var(--green-2);margin-top:16px}
+.hide{display:none!important}
+.prog{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.battery{flex:1;display:grid;grid-template-columns:repeat(20,1fr);gap:3px;height:22px;padding:3px;border:2px solid var(--green);border-radius:8px;position:relative}
+.battery:after{content:"";position:absolute;right:-8px;top:5px;width:5px;height:8px;background:var(--green);border-radius:0 3px 3px 0}
+.battery i{background:rgba(31,61,43,.1);border-radius:2px;transition:background .25s}
+.battery i.on{background:var(--olive)}
+.pc{font-weight:700;font-size:14px;min-width:46px;text-align:right}
+.tag{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:5px 11px;border-radius:999px;background:var(--blush);margin-bottom:12px}
+.q{font:700 clamp(23px,5.2vw,31px)/1.22 Georgia,serif;margin-bottom:22px;min-height:96px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:14px;text-align:left;border:1.5px solid var(--line);background:var(--cream);border-radius:18px;padding:14px 16px;font-size:17px;font-weight:600;font-family:inherit;color:var(--green);cursor:pointer;transition:.15s}
+.opt b{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--paper);border:1.5px solid var(--line);font-size:14px;flex:none}
+.opt:hover{background:#fff;border-color:var(--green-2);transform:translateX(3px)}
+.opt.sel{background:var(--lime);border-color:var(--olive)}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
+.link{background:none;border:0;font-size:15px;font-weight:600;font-family:inherit;color:var(--green-2);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center}
+.ring{position:relative;width:170px;height:170px}
+.ring svg{transform:rotate(-90deg)}
+.ring .num{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font:700 40px Georgia,serif;line-height:1}
+.ring .num small{display:block;font:600 13px -apple-system,sans-serif;margin-top:4px;color:var(--green-2)}
+.zone h2{font:700 clamp(26px,6vw,36px)/1.1 Georgia,serif;margin-bottom:8px}
+.zone p{color:var(--green-2)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.mini{background:var(--paper);border:1.5px solid var(--line);border-radius:22px;padding:16px}
+.mini h3{font-size:14px;font-weight:700;color:var(--green-2);margin-bottom:6px}
+.mini .lv{font:700 22px Georgia,serif;margin:2px 0 10px}
+.cells{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;height:12px}
+.cells i{border-radius:3px;background:rgba(31,61,43,.1)}
+.cells i.on{background:var(--olive)}
+.cells.mid i.on{background:#E0A23A}
+.cells.hi i.on{background:var(--terra)}
+.tips{margin-top:14px}
+.tips h3{font:700 22px Georgia,serif;margin-bottom:10px}
+.tips li{margin:0 0 10px 22px}
+.team{background:var(--blush);border-radius:22px;padding:18px;margin-top:14px}
+.team h3{font:700 20px Georgia,serif;margin-bottom:8px}
+.team li{margin:0 0 8px 20px}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.cta{margin-top:18px;background:var(--green);color:var(--cream);border-radius:var(--r);padding:22px}
+.cta h3{font:700 24px Georgia,serif;margin-bottom:6px}
+.cta p{color:#d7e3c4;margin-bottom:14px}
+.cta a.btn{margin-right:10px;margin-bottom:10px}
+.warn{font-size:13.5px;color:var(--green-2);margin-top:16px;border-top:1.5px dashed var(--line);padding-top:14px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(30px);opacity:0;background:var(--green);color:var(--cream);padding:12px 18px;border-radius:14px;font-size:15px;transition:.25s;z-index:9}
+.toast.show{opacity:1;transform:translateX(-50%)}
+@media(max-width:560px){.hero{grid-template-columns:1fr;justify-items:center;text-align:center}.grid{grid-template-columns:1fr}.q{min-height:110px}.btn{width:100%}.acts .btn{width:100%}}
+@media print{.blob,.acts,.cta .btn,.top .chip,.nav,.toast{display:none!important}body{background:#fff}.card,.mini{box-shadow:none}.cta{background:#fff;color:var(--green);border:1.5px solid var(--line)}.cta p{color:var(--green)}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div>
+<div class="wrap">
+  <div class="top"><div class="brand"><span class="logo">HR</span>HRD без нытья</div><span class="chip">бесплатно · 4 минуты</span></div>
+
+  <section id="start">
+    <h1>Заряд на нуле? <em>Проверим</em> батарейку</h1>
+    <p class="lead">20 вопросов о том, как вы себя чувствуете на работе. В конце получите свой «уровень заряда», разбор по трём шкалам и что с этим делать.</p>
+    <div class="card">
+      <b>Кто проходит?</b>
+      <div class="seg" id="mode">
+        <button type="button" data-m="emp" aria-pressed="true">Я сотрудник<small>вопросы про работу в целом</small></button>
+        <button type="button" data-m="hr" aria-pressed="false">Я HR / руководитель<small>вопросы про людей и решения</small></button>
+      </div>
+      <div class="facts"><span>20 вопросов</span><span>3 шкалы</span><span>без регистрации</span></div>
+      <button class="btn" id="go" type="button">Начать тест</button>
+      <p class="note">Ответы остаются в вашем браузере и никуда не отправляются. Это не медицинская диагностика, а повод честно посмотреть на своё состояние.</p>
+    </div>
+  </section>
+
+  <section id="quiz" class="hide">
+    <div class="card">
+      <div class="prog"><div class="battery" id="bat"></div><div class="pc" id="pc">1/20</div></div>
+      <span class="tag" id="scale">Истощение</span>
+      <div class="q" id="qt" aria-live="polite"></div>
+      <div class="opts" id="opts"></div>
+      <div class="nav"><button class="link" id="back" type="button">← Назад</button><span class="note" style="margin:0">Можно жать 1–5 на клавиатуре</span></div>
+    </div>
+  </section>
+
+  <section id="res" class="hide">
+    <div class="card">
+      <div class="hero">
+        <div class="ring"><svg width="170" height="170" viewBox="0 0 170 170"><circle cx="85" cy="85" r="72" fill="none" stroke="rgba(31,61,43,.1)" stroke-width="18"/><circle id="arc" cx="85" cy="85" r="72" fill="none" stroke="#8C9A3C" stroke-width="18" stroke-linecap="round" stroke-dasharray="452.4" stroke-dashoffset="452.4" style="transition:stroke-dashoffset 1s ease"/></svg><div class="num"><span><span id="chg">0</span>%<small>заряд</small></span></div></div>
+        <div class="zone"><h2 id="zt"></h2><p id="zp"></p></div>
+      </div>
+    </div>
+    <div class="grid" id="mini"></div>
+    <div class="card tips"><h3>Что делать прямо сейчас</h3><ul id="tips"></ul></div>
+    <div class="team hide" id="team"><h3>А что с командой</h3><ul id="teamul"></ul></div>
+    <div class="acts">
+      <button class="btn" id="copy" type="button">Скопировать результат</button>
+      <button class="btn ghost" id="pdf" type="button">Сохранить в PDF</button>
+      <button class="btn pink" id="again" type="button">Пройти ещё раз</button>
+    </div>
+    <div class="cta">
+      <h3>Больше рабочих инструментов, без нытья</h3>
+      <p>В канале шаблоны, гайды и кейсы автоматизации HR. Бесплатно.</p>
+      <a class="btn" href="https://t.me/HRK_agency" target="_blank" rel="noopener">Подписаться на канал</a>
+      <a class="btn ghost" style="color:var(--green)" href="https://t.me/HR_Pletneva" target="_blank" rel="noopener">Написать Кристине</a>
+    </div>
+    <p class="warn">Тест не заменяет консультацию специалиста и не ставит диагноз. Если вы давно чувствуете сильное истощение, апатию или проблемы со сном, обратитесь к врачу или психологу. Это нормально и это не слабость.</p>
+  </section>
+</div>
+<div class="toast" id="toast">Скопировано</div>
+
+<script>
+const OPTS=["Никогда","Редко","Иногда","Часто","Почти всегда"];
+const SC={E:"Истощение",C:"Отстранённость",P:"Результативность"};
+const Q={
+ emp:[
+  ["E","К концу рабочего дня чувствую себя как выжатый лимон."],
+  ["E","По утрам мне трудно заставить себя идти на работу."],
+  ["E","Выходных не хватает, чтобы восстановиться."],
+  ["E","Ощущение, что я работаю на износ."],
+  ["E","После работы сил ни на что больше не остаётся."],
+  ["E","Мысли о работе мешают мне отдыхать и спать."],
+  ["E","Бывает, что работаю «на автопилоте»: делаю, но не вникаю."],
+  ["C","Общение с коллегами и клиентами стало холоднее, чем раньше."],
+  ["C","Раздражают просьбы, которые раньше не выводили из себя."],
+  ["C","Сомневаюсь, что моя работа вообще кому-то нужна."],
+  ["C","Всё чаще думаю: «мне всё равно, что здесь будет»."],
+  ["C","Хочется уволиться просто для того, чтобы всё поменять."],
+  ["C","Шуток про работу у меня стало больше злых, чем добрых."],
+  ["P","Мне кажется, что я хорошо справляюсь со своими задачами."],
+  ["P","С людьми на работе удаётся находить общий язык."],
+  ["P","Я вижу, что моя работа приносит пользу."],
+  ["P","Сложная рабочая задача решаема: я справлюсь."],
+  ["P","Результат моей работы меня радует."],
+  ["P","На новые идеи у меня остаются силы."],
+  ["P","На этой работе я расту и учусь новому."]
+ ],
+ hr:[
+  ["E","К вечеру меня выматывают бесконечные «срочно» и «можно на минутку»."],
+  ["E","Выматывает роль «жилетки» и громоотвода для всех."],
+  ["E","Выходные уходят на то, что не успелось за неделю."],
+  ["E","Ещё утром устаю от мыслей о планёрках и согласованиях."],
+  ["E","Трудно переключиться: рабочие чаты читаю даже в отпуске."],
+  ["E","Чувство, что я тяну больше, чем под силу одному человеку."],
+  ["E","Решения даются тяжело: хочется, чтобы кто-то решил за меня."],
+  ["C","Раздражают те, кого раньше удавалось терпеть спокойно."],
+  ["C","Ловлю себя на мысли: «люди везде одинаковые, ничего не изменится»."],
+  ["C","Общение стало формальным: отвечаю по регламенту, а не по-человечески."],
+  ["C","Сомневаюсь, что мои инициативы кто-то ценит."],
+  ["C","Всё чаще возникает вопрос: «а зачем я всё это делаю?»"],
+  ["C","Иронии про людей и процессы стало больше, чем доброго юмора."],
+  ["P","Я вижу, что мои решения помогают людям и бизнесу."],
+  ["P","На то, чтобы выслушать и поддержать сотрудника, силы находятся."],
+  ["P","Успеваю заниматься важным, а не только срочным."],
+  ["P","Могу отстоять свою позицию перед руководством."],
+  ["P","Радует, когда у команды получается результат."],
+  ["P","Есть идеи и желание что-то улучшать."],
+  ["P","Вижу, куда мне расти дальше."]
+ ]};
+const ZONES=[
+ {max:25,t:"Заряд в норме",p:"Вы держитесь бодро. Сейчас главное не расходовать запас впустую: сон, паузы и границы между работой и отдыхом."},
+ {max:45,t:"Батарейка садится",p:"Первые звоночки уже есть. Пока это поправимо: небольшие изменения в нагрузке и отдыхе дают быстрый эффект."},
+ {max:65,t:"Красная зона близко",p:"Усталость стала системной, и обычных выходных уже не хватает. Пора менять что-то в режиме и нагрузке, а не терпеть."},
+ {max:101,t:"Нужна срочная подзарядка",p:"Сейчас организм и мотивация работают на остатках. Не откладывайте: снизьте нагрузку, поговорите с руководителем или специалистом."}
+];
+const TIPS={
+ E:{mid:["Выберите один вечер в неделю без рабочих чатов и уведомлений. Выключите их на уровне телефона, а не силой воли.","Уберите из недели одну задачу, которую делаете «потому что всегда делали». Лучше отдать, отложить или отменить."],
+    hi:["Договоритесь о разгрузке: перенесите две задачи и честно скажите руководителю, что ресурс на пределе.","Верните базу: сон 7–8 часов, еда, прогулка. Выгорание быстро ест именно их.","Возьмите ближайший отгул или отпуск без ноутбука. Хотя бы 3 дня подряд."]},
+ C:{mid:["Найдите в неделе одну задачу, где видно пользу для людей, и сделайте её первой.","Отметьте, что именно раздражает: люди, процессы или смысл. Это три разных проблемы."],
+    hi:["Поговорите с кем-то, кому доверяете, и скажите прямо: «мне стало всё равно». Вслух это работает лучше, чем в голове.","Подумайте, что изменилось: нагрузка, руководитель, цели или вы сами. Ответ подскажет, что менять."]},
+ P:{mid:["Запишите три дела за неделю, которые получились. Мозг в усталости видит только провалы.","Попросите у коллеги честную обратную связь: часто вы справляетесь лучше, чем кажется."],
+    hi:["Разбейте большую задачу на куски по 30–40 минут и закрывайте по одному. Чувство контроля возвращается через маленькие победы.","Выберите одну новую вещь для обучения в удобном темпе, без дедлайна."]}
+};
+const TEAM=["Посмотрите на нагрузку команды: кто работает в режиме «срочно» постоянно и кто давно не брал отпуск.","Проведите короткие разговоры 1:1 с вопросом «что тебя сейчас выматывает больше всего?» и не спешите сразу решать.","Уберите хотя бы один бесполезный регламент, отчёт или планёрку. Самая быстрая разгрузка для всех.","Покажите пример: сами уходите вовремя и не пишете в чаты по ночам. Команда копирует поведение руководителя."];
+let mode="emp",i=0,ans=[];
+const $=id=>document.getElementById(id);
+function show(id){["start","quiz","res"].forEach(s=>$(s).classList.toggle("hide",s!==id));scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll("#mode button").forEach(b=>b.onclick=()=>{mode=b.dataset.m;document.querySelectorAll("#mode button").forEach(x=>x.setAttribute("aria-pressed",x===b))});
+$("go").onclick=()=>{i=0;ans=[];buildBat();show("quiz");render()};
+function buildBat(){$("bat").innerHTML=Array.from({length:20},()=>"<i></i>").join("")}
+function render(){
+ const q=Q[mode][i];
+ $("scale").textContent=SC[q[0]];$("qt").textContent=q[1];$("pc").textContent=(i+1)+"/20";
+ [...$("bat").children].forEach((c,k)=>c.classList.toggle("on",k<i));
+ $("opts").innerHTML=OPTS.map((o,k)=>`<button class="opt${ans[i]===k?" sel":""}" data-k="${k}"><b>${k+1}</b>${o}</button>`).join("");
+ $("opts").querySelectorAll(".opt").forEach(b=>b.onclick=()=>pick(+b.dataset.k));
+ $("back").style.visibility=i?"visible":"hidden";
+}
+function pick(k){ans[i]=k;[...$("opts").children].forEach((c,x)=>c.classList.toggle("sel",x===k));setTimeout(()=>{if(i<19){i++;render()}else finish()},180)}
+$("back").onclick=()=>{if(i>0){i--;render()}};
+document.addEventListener("keydown",e=>{if($("quiz").classList.contains("hide"))return;if(e.key>="1"&&e.key<="5")pick(+e.key-1);if(e.key==="ArrowLeft"&&i>0){i--;render()}});
+let last=null;
+function lvl(p){return p<33?"low":p<67?"mid":"hi"}
+function finish(){
+ const s={E:0,C:0,P:0},n={E:0,C:0,P:0};
+ Q[mode].forEach((q,k)=>{const v=q[0]==="P"?4-ans[k]:ans[k];s[q[0]]+=v;n[q[0]]++});
+ const pc={};for(const k in s)pc[k]=Math.round(s[k]/(n[k]*4)*100);
+ const idx=Math.round((pc.E+pc.C+pc.P)/3);
+ const charge=100-idx;
+ const z=ZONES.find(z=>idx<z.max);
+ last={idx,charge,z,pc};
+ show("res");
+ $("zt").textContent=z.t;$("zp").textContent=z.p;
+ const arc=$("arc");arc.style.stroke=idx<25?"#8C9A3C":idx<45?"#C9A93A":idx<65?"#E0803A":"#C8553D";
+ setTimeout(()=>{arc.style.strokeDashoffset=452.4*(1-charge/100)},60);
+ let c=0;const t=setInterval(()=>{c+=Math.max(1,Math.round(charge/30));if(c>=charge){c=charge;clearInterval(t)}$("chg").textContent=c},25);
+ const names={E:["Истощение","Сколько сил уходит на работу"],C:["Отстранённость","Остывание к людям и смыслу"],P:["Результативность","Вера в свои силы и вкус к результату"]};
+ const L={low:"Низкий",mid:"Средний",hi:"Высокий"};
+ const burn={E:pc.E,C:pc.C,P:pc.P};
+ $("mini").innerHTML=["E","C","P"].map(k=>{const l=lvl(burn[k]);const eff=k==="P";const on=Math.max(1,Math.round((eff?100-burn[k]:burn[k])/20));const lab=eff?(l==="low"?"Высокая":l==="mid"?"Средняя":"Низкая"):L[l];const cls=eff?(l==="low"?"low":l==="mid"?"mid":"hi"):l;
+  return `<div class="mini"><h3>${names[k][0]}</h3><div class="lv">${lab}</div><div class="cells ${cls}">${Array.from({length:5},(_,j)=>`<i class="${j<on?"on":""}"></i>`).join("")}</div><p class="note" style="margin-top:10px">${names[k][1]}</p></div>`}).join("");
+ const tips=[];["E","C","P"].forEach(k=>{const l=lvl(burn[k]);if(l!=="low")tips.push(...TIPS[k][l])});
+ if(!tips.length)tips.push("Вы в хорошей форме. Закрепите: держите границы между работой и отдыхом, не копите отпуск и раз в квартал проходите этот тест заново.","Поделитесь тестом с коллегой: иногда человек сам не замечает, что у него садится батарейка.");
+ $("tips").innerHTML=tips.slice(0,6).map(t=>`<li>${t}</li>`).join("");
+ $("team").classList.toggle("hide",!(mode==="hr"));
+ $("teamul").innerHTML=TEAM.map(t=>`<li>${t}</li>`).join("");
+}
+function toast(m){const t=$("toast");t.textContent=m;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1800)}
+$("copy").onclick=()=>{if(!last)return;const txt=`Мой заряд на работе: ${last.charge}% — «${last.z.t}».\nИстощение ${last.pc.E}%, отстранённость ${last.pc.C}%, снижение результативности ${last.pc.P}%.\nТест на выгорание от HRD без нытья: ${location.href.split("#")[0]}`;
+ (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(()=>toast("Скопировано"),()=>{const a=document.createElement("textarea");a.value=txt;document.body.appendChild(a);a.select();try{document.execCommand("copy");toast("Скопировано")}catch(e){toast("Не удалось скопировать")}a.remove()})};
+$("pdf").onclick=()=>window.print();
+$("again").onclick=()=>show("start");
+</script>
+</body>
+</html>
